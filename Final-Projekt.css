@@ -1,0 +1,208 @@
+html {
+  scroll-behavior: smooth;
+  scroll-padding: 50px;
+}
+
+body {
+  justify-content: center;
+  align-items: center;
+  padding: 0;
+  margin: 0;
+  font-family: 'Comforter Brush', cursive;
+  background-color: white;
+}
+
+li a {
+  color: black;
+  font-size: 22px;
+}
+
+a:hover {
+  color: blue;
+}
+
+h1 {
+  font-size: 30px;
+  letter-spacing: 3px;
+}
+
+h2 {
+  /* border: 2px solid red; */
+  color: white;
+  font-size: 50px;
+  font-family: 'Comforter Brush', cursive;
+  margin: 20px;
+  padding-top: 30px;
+  letter-spacing: 5px;
+}
+
+.content h2 {
+  padding: 0;
+}
+
+header h2 {
+  /* border: 2px solid red; */
+  margin: 0;
+  padding: 30px;
+  width: 450px;
+  word-spacing: 10px;
+}
+
+.my-navi {
+  /* border: 2px solid red; */
+  background-color: white;
+  flex-direction: row;
+  justify-content: space-around;
+  align-items: center;
+  display: flex;
+  position: fixed;
+  margin: 0%;
+  padding: 0%;
+  top: 0;
+  right: 0;
+  left: 0;
+
+}
+
+/* HERO */
+.my-hero {
+  /* border: 2px solid red; */
+  height: 100vh;
+  padding: 50px;
+  background-image: url("./foto/jannis-brandt-mmsQUgMLqUo-unsplash.jpg");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+
+}
+
+/* ASORTIMENT */
+
+.container {
+  /* border: 2px solid red; */
+  margin: 200px 0;
+  padding: 130px 0;
+  height: 400px;
+  position: relative;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+}
+
+.container .card {
+  /* border: 2px solid red; */
+  position: relative;
+  width: 400px;
+  height: 215px;
+  background: #C0C0C0;
+  margin: 20px 10px;
+  padding: 20px 15px;
+  display: flex;
+  flex-direction: column;
+  border-radius: 4px;
+  box-shadow: 0 5px 202px rgba(0, 0, 0, 0, 5);
+  transition: 0.3s ease-in-out;
+
+}
+
+.container .card:hover {
+  height: 420px;
+}
+
+.container .card .imgBx {
+  /* border: 2px solid red; */
+  position: relative;
+  justify-content: space-evenly;
+  background-size: cover;
+  width: 300px;
+  height: 260px;
+  top: -50px;
+  left: 50px;
+  z-index: 1;
+  box-shadow: 0 5px 20px rgba(0, 0, 0, 0, 2);
+
+}
+
+.container .card .imgBx img {
+  max-width: 100%;
+  border-radius: 4px;
+}
+
+.container .card .content {
+  /* border: 2px solid red; */
+  position: relative;
+  margin-top: -140px;
+  text-align: center;
+  color: white;
+  visibility: hidden;
+  opacity: 0;
+  transition: 0.3s ease-in-out;
+}
+
+.container .card:hover .content {
+  visibility: visible;
+  opacity: 1;
+  margin-top: -40px;
+  transition-delay: 0.3s;
+}
+
+/* ABOUT */
+
+.about {
+  height: 100vh;
+  background-image: url("./foto/fitness-theme-fl1.jpg");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+}
+
+.text-about {
+  /* border: 2px solid red; */
+  color: white;
+  font-size: xx-large;
+  letter-spacing: 5px;
+  height: 100%;
+  width: 1000px;
+}
+
+/* KONTAKT */
+
+.kontakt {
+  /* border: 2px solid red; */
+  height: 100vh;
+  background-image: url("./foto/Kontakt2.jpg");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+}
+
+.kontakt a {
+  /* border: 2px solid red; */
+  text-decoration: none;
+  font-size: 100px;
+}
+
+.kontakt ul {
+  list-style: none;
+  display: flex;
+  justify-content: center;
+}
+
+.kontakt li {
+  padding: 30px;
+  display: inline-block;
+}
+ /* MEDIA */
+
+@media only screen and (max-width: 900px) {
+  .kontakt ul {
+    display: inline-block;
+  }
+}
+
+@media only screen and (max-width: 900px) {
+  .kontakt ul li {
+    padding: 30px;
+  }
+}
